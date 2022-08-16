@@ -18,6 +18,8 @@ namespace testAlarm
         private Controls.RawData rawDataPage;
         private Controls.MeasureData measureDataPage;
         private Controls.AlarmData alarmDataPage;
+        private Controls.Login loginDataPage;
+
 
         public Meteo()
         {
@@ -25,6 +27,8 @@ namespace testAlarm
             this.rawDataPage = RawData.GetInstance;
             this.measureDataPage = MeasureData.GetInstance;
             this.alarmDataPage = AlarmData.GetInstance;
+            this.loginDataPage = Login.GetInstance;
+
 
             SerialPort.DataReceived += new SerialDataReceivedEventHandler(Reception.ReceptionHandler);
 
@@ -136,6 +140,10 @@ namespace testAlarm
             Treatment.DataTreatment(Data.Tables.DataFromSensor, rawDataPage.getGrid());
         }
 
-      
+        private void BtLogin_Click(object sender, EventArgs e)
+        {
+            panel_container.Controls.Clear();
+            panel_container.Controls.Add(loginDataPage);
+        }
     }
 }

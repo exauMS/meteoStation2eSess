@@ -21,7 +21,7 @@ namespace testAlarm.Controls
             grid_alarm_data.AutoSizeColumnsMode = DataGridViewAutoSizeColumnsMode.Fill;
             grid_alarm_data.AutoSizeRowsMode = DataGridViewAutoSizeRowsMode.AllCells;
         }
-
+        // Singleton
         public static AlarmData GetInstance
         {
             get

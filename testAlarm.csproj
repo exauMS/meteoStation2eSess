@@ -64,6 +64,12 @@
     <Compile Include="Controls\RawData.Designer.cs">
       <DependentUpon>RawData.cs</DependentUpon>
     </Compile>
+    <Compile Include="Controls\Login.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Controls\Login.Designer.cs">
+      <DependentUpon>Login.cs</DependentUpon>
+    </Compile>
     <Compile Include="Data\Collections.cs" />
     <Compile Include="Data\Tables.cs" />
     <Compile Include="Treatment.cs" />
@@ -81,6 +87,9 @@
     <Compile Include="Reception.cs" />
     <EmbeddedResource Include="Controls\AlarmData.resx">
       <DependentUpon>AlarmData.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Controls\Login.resx">
+      <DependentUpon>Login.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Controls\MeasureData.resx">
       <DependentUpon>MeasureData.cs</DependentUpon>
