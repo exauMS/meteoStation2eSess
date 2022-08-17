@@ -13,7 +13,7 @@ namespace testAlarm.DBAccess_Provider
 
 		internal static OleDbConnection connexion = new OleDbConnection("Provider=Microsoft.ACE.OLEDB.12.0;"
 																			+
-																		@"Data Source=..\..\..\DB_UserAccess.accdb;Cache Authentication=True");
+																		@"Data Source=..\..\..\meteoStation2eSess\DB_UserAccess.accdb;Cache Authentication=True");
 		internal static void Config()
 		{
 			string Insert_CommandText = "INSERT into UserTable(UserName,UserPassword,Access_Id) values(@UserName,@UserPassword,@Access_Id);";
