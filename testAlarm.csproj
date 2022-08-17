@@ -72,6 +72,9 @@
     </Compile>
     <Compile Include="Data\Collections.cs" />
     <Compile Include="Data\Tables.cs" />
+    <Compile Include="DBAccess Provider\Adapter.cs" />
+    <Compile Include="DBAccess Provider\DataReader.cs" />
+    <Compile Include="DBAccess Provider\Tools.cs" />
     <Compile Include="Treatment.cs" />
     <Compile Include="Types\Alarm.cs" />
     <Compile Include="Types\Base.cs" />
